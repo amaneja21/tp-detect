@@ -1,0 +1,50 @@
+[
+ {
+  "N": 5,
+  "policy": "isolated",
+  "rho": 0.2,
+  "rounds": 60,
+  "calls": 300,
+  "exposure": 18,
+  "first_quarantine_round": null,
+  "false_quarantines": 0,
+  "benign_alerts": 0,
+  "triggered_alerts": 18
+ },
+ {
+  "N": 5,
+  "policy": "fleet",
+  "rho": 0.2,
+  "rounds": 60,
+  "calls": 300,
+  "exposure": 7,
+  "first_quarantine_round": 16,
+  "false_quarantines": 0,
+  "benign_alerts": 0,
+  "triggered_alerts": 7
+ },
+ {
+  "N": 20,
+  "policy": "isolated",
+  "rho": 0.2,
+  "rounds": 60,
+  "calls": 1200,
+  "exposure": 76,
+  "first_quarantine_round": 21,
+  "false_quarantines": 0,
+  "benign_alerts": 0,
+  "triggered_alerts": 76
+ },
+ {
+  "N": 20,
+  "policy": "fleet",
+  "rho": 0.2,
+  "rounds": 60,
+  "calls": 1200,
+  "exposure": 7,
+  "first_quarantine_round": 4,
+  "false_quarantines": 0,
+  "benign_alerts": 0,
+  "triggered_alerts": 7
+ }
+]

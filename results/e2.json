@@ -1,0 +1,60 @@
+{
+ "false_alarm_by_source": {
+  "git": {
+   "n": 39,
+   "tpdetect": 0.02564102564102564
+  },
+  "releases": {
+   "n": 198,
+   "tpdetect": 0.010101010101010102
+  }
+ },
+ "main": {
+  "No pinning": {
+   "detect_rate": 0.0,
+   "false_alarm_rate": 0.0
+  },
+  "Plain pinning": {
+   "detect_rate": 1.0,
+   "false_alarm_rate": 1.0
+  },
+  "TP-Detect L1": {
+   "detect_rate": 0.8980169971671388,
+   "false_alarm_rate": 0.012658227848101266
+  }
+ },
+ "counts": {
+  "malicious": 706,
+  "benign": 237
+ },
+ "poisoned_real_updates": {
+  "No pinning": {
+   "detect_rate": 0.0,
+   "false_alarm_rate": 0.0
+  },
+  "Plain pinning": {
+   "detect_rate": 1.0,
+   "false_alarm_rate": 0.0
+  },
+  "TP-Detect L1": {
+   "detect_rate": 0.890295358649789,
+   "false_alarm_rate": 0.0
+  }
+ },
+ "n_poisoned_real": 237,
+ "heldout_phrasing_rugpulls": {
+  "No pinning": {
+   "detect_rate": 0.0,
+   "false_alarm_rate": 0.0
+  },
+  "Plain pinning": {
+   "detect_rate": 1.0,
+   "false_alarm_rate": 0.0
+  },
+  "TP-Detect L1": {
+   "detect_rate": 0.4270833333333333,
+   "false_alarm_rate": 0.0
+  }
+ },
+ "n_heldout": 96
+}

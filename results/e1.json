@@ -1,0 +1,568 @@
+{
+ "leave_server_out": {
+  "Pattern scanner": {
+   "precision": 0.992467043314501,
+   "recall": 0.7507122507122507,
+   "f1": 0.8548256285482563,
+   "fpr": 0.0113314447592068,
+   "auroc": 0.869690402976522,
+   "recall_on_successful_attacks": 0.7529880478087649,
+   "f1_ci": [
+    0.8184031653441806,
+    0.8974997442193575
+   ],
+   "fpr_ci": [
+    0.0,
+    0.02597571699134199
+   ],
+   "recall_by_paradigm": {
+    "Template-1": 0.7916666666666666,
+    "Template-2": 0.76,
+    "Template-3": 0.73
+   },
+   "recall_by_risk": {
+    "Infrastructure Damage": 0.796875,
+    "Credential Leakage": 0.925,
+    "Privacy Leakage": 0.8130081300813008,
+    "Service Disruption": 0.6880733944954128,
+    "Code Injection": 0.7608695652173914,
+    "Information Manipulation": 0.6640625,
+    "Financial Loss": 0.7,
+    "Instruction Tampering": 0.6666666666666666,
+    "Other": 0.7,
+    "Message Hijacking": 0.68,
+    "Data Tampering": 0.7246376811594203
+   }
+  },
+  "Rules (hand-weighted)": {
+   "precision": 0.996219281663516,
+   "recall": 0.7507122507122507,
+   "f1": 0.8562144597887896,
+   "fpr": 0.0056657223796034,
+   "auroc": 0.9942757641057924,
+   "recall_on_successful_attacks": 0.750996015936255,
+   "f1_ci": [
+    0.8255881965211237,
+    0.8944017831592502
+   ],
+   "fpr_ci": [
+    0.0,
+    0.01377537418593137
+   ],
+   "recall_by_paradigm": {
+    "Template-1": 0.7291666666666666,
+    "Template-2": 0.8066666666666666,
+    "Template-3": 0.7
+   },
+   "recall_by_risk": {
+    "Infrastructure Damage": 0.796875,
+    "Credential Leakage": 0.85,
+    "Privacy Leakage": 0.7804878048780488,
+    "Service Disruption": 0.7064220183486238,
+    "Code Injection": 0.9130434782608695,
+    "Information Manipulation": 0.6953125,
+    "Financial Loss": 0.7333333333333333,
+    "Instruction Tampering": 0.6111111111111112,
+    "Other": 0.8,
+    "Message Hijacking": 0.64,
+    "Data Tampering": 0.6811594202898551
+   }
+  },
+  "Text-LR": {
+   "precision": 0.9899280575539569,
+   "recall": 0.98005698005698,
+   "f1": 0.9849677881173944,
+   "fpr": 0.019830028328611898,
+   "auroc": 0.9987127026787084,
+   "recall_on_successful_attacks": 0.9840637450199203,
+   "f1_ci": [
+    0.9693634860502243,
+    0.9986813368969336
+   ],
+   "fpr_ci": [
+    0.0026734412333598817,
+    0.04610951008645533
+   ],
+   "recall_by_paradigm": {
+    "Template-1": 0.9375,
+    "Template-2": 0.98,
+    "Template-3": 0.9966666666666667
+   },
+   "recall_by_risk": {
+    "Infrastructure Damage": 1.0,
+    "Credential Leakage": 1.0,
+    "Privacy Leakage": 0.959349593495935,
+    "Service Disruption": 0.9908256880733946,
+    "Code Injection": 1.0,
+    "Information Manipulation": 1.0,
+    "Financial Loss": 1.0,
+    "Instruction Tampering": 1.0,
+    "Other": 0.9,
+    "Message Hijacking": 1.0,
+    "Data Tampering": 0.8985507246376812
+   }
+  },
+  "Rules-LR": {
+   "precision": 0.9786910197869102,
+   "recall": 0.915954415954416,
+   "f1": 0.9462840323767476,
+   "fpr": 0.039660056657223795,
+   "auroc": 0.9917617006852133,
+   "recall_on_successful_attacks": 0.9063745019920318,
+   "f1_ci": [
+    0.9232284382284381,
+    0.9632459025916971
+   ],
+   "fpr_ci": [
+    0.002731685103736283,
+    0.08757062146892655
+   ],
+   "recall_by_paradigm": {
+    "Template-1": 0.9166666666666666,
+    "Template-2": 0.9933333333333333,
+    "Template-3": 0.8366666666666667
+   },
+   "recall_by_risk": {
+    "Infrastructure Damage": 1.0,
+    "Credential Leakage": 1.0,
+    "Privacy Leakage": 0.9105691056910569,
+    "Service Disruption": 0.8532110091743119,
+    "Code Injection": 0.9565217391304348,
+    "Information Manipulation": 0.859375,
+    "Financial Loss": 0.9333333333333333,
+    "Instruction Tampering": 0.8888888888888888,
+    "Other": 1.0,
+    "Message Hijacking": 1.0,
+    "Data Tampering": 0.8840579710144928
+   }
+  },
+  "TP-Detect L2 (combined)": {
+   "precision": 0.9842180774748924,
+   "recall": 0.9772079772079773,
+   "f1": 0.9807005003573981,
+   "fpr": 0.031161473087818695,
+   "auroc": 0.996517437027352,
+   "recall_on_successful_attacks": 0.9800796812749004,
+   "f1_ci": [
+    0.9649473418210737,
+    0.9957629805005946
+   ],
+   "fpr_ci": [
+    0.003057870888341911,
+    0.07006534866407478
+   ],
+   "recall_by_paradigm": {
+    "Template-1": 0.9166666666666666,
+    "Template-2": 0.99,
+    "Template-3": 0.9833333333333333
+   },
+   "recall_by_risk": {
+    "Infrastructure Damage": 1.0,
+    "Credential Leakage": 1.0,
+    "Privacy Leakage": 0.9186991869918699,
+    "Service Disruption": 1.0,
+    "Code Injection": 0.9782608695652174,
+    "Information Manipulation": 0.9921875,
+    "Financial Loss": 1.0,
+    "Instruction Tampering": 1.0,
+    "Other": 1.0,
+    "Message Hijacking": 1.0,
+    "Data Tampering": 0.9420289855072463
+   }
+  }
+ },
+ "leave_paradigm_out": {
+  "Pattern scanner": {
+   "Template-1": {
+    "precision": 0.95,
+    "recall": 0.7916666666666666,
+    "f1": 0.8636363636363636,
+    "fpr": 0.0113314447592068,
+    "auroc": 0.8901676109537299
+   },
+   "Template-2": {
+    "precision": 0.9827586206896551,
+    "recall": 0.76,
+    "f1": 0.8571428571428571,
+    "fpr": 0.0113314447592068,
+    "auroc": 0.8743342776203966
+   },
+   "Template-3": {
+    "precision": 0.9820627802690582,
+    "recall": 0.73,
+    "f1": 0.8374760994263862,
+    "fpr": 0.0113314447592068,
+    "auroc": 0.8593342776203966
+   }
+  },
+  "Rules (hand-weighted)": {
+   "Template-1": {
+    "precision": 0.9722222222222222,
+    "recall": 0.7291666666666666,
+    "f1": 0.8333333333333334,
+    "fpr": 0.0056657223796034,
+    "auroc": 0.9949687204910294
+   },
+   "Template-2": {
+    "precision": 0.9918032786885246,
+    "recall": 0.8066666666666666,
+    "f1": 0.8897058823529411,
+    "fpr": 0.0056657223796034,
+    "auroc": 0.9976062322946176
+   },
+   "Template-3": {
+    "precision": 0.9905660377358491,
+    "recall": 0.7,
+    "f1": 0.8203125,
+    "fpr": 0.0056657223796034,
+    "auroc": 0.9906515580736545
+   }
+  },
+  "Text-LR": {
+   "Template-1": {
+    "precision": 0.9456521739130435,
+    "recall": 0.90625,
+    "f1": 0.925531914893617,
+    "fpr": 0.014164305949008499,
+    "auroc": 0.9954556185080264
+   },
+   "Template-2": {
+    "precision": 0.9930555555555556,
+    "recall": 0.9533333333333334,
+    "f1": 0.9727891156462585,
+    "fpr": 0.0056657223796034,
+    "auroc": 0.9982625118035883
+   },
+   "Template-3": {
+    "precision": 0.9962264150943396,
+    "recall": 0.88,
+    "f1": 0.9345132743362832,
+    "fpr": 0.0028328611898017,
+    "auroc": 0.996600566572238
+   }
+  },
+  "Rules-LR": {
+   "Template-1": {
+    "precision": 0.86,
+    "recall": 0.8958333333333334,
+    "f1": 0.8775510204081632,
+    "fpr": 0.039660056657223795,
+    "auroc": 0.9917079792256845
+   },
+   "Template-2": {
+    "precision": 0.9551282051282052,
+    "recall": 0.9933333333333333,
+    "f1": 0.9738562091503268,
+    "fpr": 0.039660056657223795,
+    "auroc": 0.9944617563739377
+   },
+   "Template-3": {
+    "precision": 0.9862385321100917,
+    "recall": 0.7166666666666667,
+    "f1": 0.8301158301158301,
+    "fpr": 0.0084985835694051,
+    "auroc": 0.9878847969782814
+   }
+  },
+  "TP-Detect L2 (combined)": {
+   "Template-1": {
+    "precision": 0.8888888888888888,
+    "recall": 0.9166666666666666,
+    "f1": 0.9025641025641026,
+    "fpr": 0.031161473087818695,
+    "auroc": 0.9922686496694996
+   },
+   "Template-2": {
+    "precision": 0.9644012944983819,
+    "recall": 0.9933333333333333,
+    "f1": 0.9786535303776683,
+    "fpr": 0.031161473087818695,
+    "auroc": 0.9980736543909349
+   },
+   "Template-3": {
+    "precision": 0.9811320754716981,
+    "recall": 0.6933333333333334,
+    "f1": 0.8125,
+    "fpr": 0.0113314447592068,
+    "auroc": 0.9870443814919735
+   }
+  }
+ },
+ "transfer": {
+  "Pattern scanner": {
+   "wild_fpr": 0.0783132530120482,
+   "wild_n": 498,
+   "ood_recall": 0.5833333333333334,
+   "ood_n": 108,
+   "ood_by_style": {
+    "important_block": 1.0,
+    "polite_note": 0.26666666666666666,
+    "unicode_tags": 1.0,
+    "html_comment": 1.0,
+    "param_spec": 0.2,
+    "shadowing": 0.3333333333333333,
+    "paraphrase_subtle": 0.2,
+    "invariant_poc": 1.0
+   },
+   "flagged_wild": [
+    [
+     "wild:awslabs.cloudwatch-mcp-server",
+     "get_promql_labels",
+     1.0
+    ],
+    [
+     "wild:awslabs.cloudwatch-mcp-server",
+     "get_active_alarms",
+     1.0
+    ],
+    [
+     "wild:awslabs.cloudwatch-mcp-server",
+     "get_alarm_history",
+     1.0
+    ],
+    [
+     "wild:awslabs.dynamodb-mcp-server",
+     "dynamodb_data_model_schema_validator",
+     1.0
+    ],
+    [
+     "wild:awslabs.eks-mcp-server",
+     "manage_k8s_resource",
+     1.0
+    ],
+    [
+     "wild:awslabs.eks-mcp-server",
+     "search_eks_troubleshoot_guide",
+     1.0
+    ],
+    [
+     "wild:awslabs.eks-mcp-server",
+     "get_policies_for_role",
+     1.0
+    ],
+    [
+     "wild:awslabs.eks-mcp-server",
+     "get_eks_insights",
+     1.0
+    ]
+   ]
+  },
+  "Rules (hand-weighted)": {
+   "wild_fpr": 0.060240963855421686,
+   "wild_n": 498,
+   "ood_recall": 0.4444444444444444,
+   "ood_n": 108,
+   "ood_by_style": {
+    "important_block": 1.0,
+    "polite_note": 0.0,
+    "unicode_tags": 1.0,
+    "html_comment": 1.0,
+    "param_spec": 0.0,
+    "shadowing": 0.0,
+    "paraphrase_subtle": 0.0,
+    "invariant_poc": 1.0
+   },
+   "flagged_wild": [
+    [
+     "wild:awslabs.aws-documentation-mcp-server",
+     "search_table",
+     0.948
+    ],
+    [
+     "wild:awslabs.aws-pricing-mcp-server",
+     "get_pricing",
+     0.926
+    ],
+    [
+     "wild:awslabs.cloudtrail-mcp-server",
+     "lake_query",
+     0.888
+    ],
+    [
+     "wild:awslabs.aws-documentation-mcp-server",
+     "read_documentation",
+     0.862
+    ],
+    [
+     "wild:awslabs.aws-documentation-mcp-server",
+     "read_sections",
+     0.756
+    ],
+    [
+     "wild:@sentry/mcp-server",
+     "search_issues",
+     0.756
+    ],
+    [
+     "wild:awslabs.cloudwatch-mcp-server",
+     "execute_promql_query",
+     0.744
+    ],
+    [
+     "wild:firecrawl-mcp",
+     "firecrawl_agent",
+     0.731
+    ]
+   ]
+  },
+  "Text-LR": {
+   "wild_fpr": 0.002008032128514056,
+   "wild_n": 498,
+   "ood_recall": 0.21296296296296297,
+   "ood_n": 108,
+   "ood_by_style": {
+    "important_block": 0.9333333333333333,
+    "polite_note": 0.13333333333333333,
+    "unicode_tags": 0.0,
+    "html_comment": 0.06666666666666667,
+    "param_spec": 0.0,
+    "shadowing": 0.13333333333333333,
+    "paraphrase_subtle": 0.06666666666666667,
+    "invariant_poc": 1.0
+   },
+   "flagged_wild": [
+    [
+     "wild:awslabs.s3-tables-mcp-server",
+     "create_table_bucket",
+     0.529
+    ]
+   ]
+  },
+  "Rules-LR": {
+   "wild_fpr": 0.1606425702811245,
+   "wild_n": 498,
+   "ood_recall": 0.19444444444444445,
+   "ood_n": 108,
+   "ood_by_style": {
+    "important_block": 1.0,
+    "polite_note": 0.06666666666666667,
+    "unicode_tags": 0.0,
+    "html_comment": 0.06666666666666667,
+    "param_spec": 0.0,
+    "shadowing": 0.06666666666666667,
+    "paraphrase_subtle": 0.0,
+    "invariant_poc": 1.0
+   },
+   "flagged_wild": [
+    [
+     "wild:awslabs.aws-documentation-mcp-server",
+     "search_table",
+     1.0
+    ],
+    [
+     "wild:awslabs.aws-pricing-mcp-server",
+     "get_pricing",
+     1.0
+    ],
+    [
+     "wild:@sentry/mcp-server",
+     "search_issues",
+     0.999
+    ],
+    [
+     "wild:awslabs.eks-mcp-server",
+     "get_cloudwatch_metrics",
+     0.999
+    ],
+    [
+     "wild:awslabs.cloudtrail-mcp-server",
+     "lake_query",
+     0.999
+    ],
+    [
+     "wild:firecrawl-mcp",
+     "firecrawl_agent",
+     0.999
+    ],
+    [
+     "wild:awslabs.dynamodb-mcp-server",
+     "generate_data_access_layer",
+     0.997
+    ],
+    [
+     "wild:awslabs.aws-pricing-mcp-server",
+     "generate_cost_report",
+     0.991
+    ]
+   ]
+  },
+  "TP-Detect L2 (combined)": {
+   "wild_fpr": 0.13453815261044177,
+   "wild_n": 498,
+   "ood_recall": 0.19444444444444445,
+   "ood_n": 108,
+   "ood_by_style": {
+    "important_block": 1.0,
+    "polite_note": 0.06666666666666667,
+    "unicode_tags": 0.0,
+    "html_comment": 0.06666666666666667,
+    "param_spec": 0.0,
+    "shadowing": 0.06666666666666667,
+    "paraphrase_subtle": 0.0,
+    "invariant_poc": 1.0
+   },
+   "flagged_wild": [
+    [
+     "wild:awslabs.aws-documentation-mcp-server",
+     "search_table",
+     1.0
+    ],
+    [
+     "wild:awslabs.aws-pricing-mcp-server",
+     "get_pricing",
+     1.0
+    ],
+    [
+     "wild:@sentry/mcp-server",
+     "search_issues",
+     1.0
+    ],
+    [
+     "wild:awslabs.cloudtrail-mcp-server",
+     "lake_query",
+     1.0
+    ],
+    [
+     "wild:awslabs.eks-mcp-server",
+     "get_cloudwatch_metrics",
+     1.0
+    ],
+    [
+     "wild:awslabs.dynamodb-mcp-server",
+     "generate_data_access_layer",
+     1.0
+    ],
+    [
+     "wild:firecrawl-mcp",
+     "firecrawl_agent",
+     1.0
+    ],
+    [
+     "wild:awslabs.aws-pricing-mcp-server",
+     "generate_cost_report",
+     0.999
+    ]
+   ]
+  }
+ },
+ "rules_lr_weights": {
+  "R1_cross_tool_ref": 5.873579519841436,
+  "R2_override": 3.8676727624658205,
+  "R3_precondition": 3.0110010525372237,
+  "R4_mandate": 4.186036618572779,
+  "R5_conceal": -0.06027827792162487,
+  "R6_sensitive": 1.5463131454412666,
+  "R7_side_effect": 0.3222938213267985,
+  "R8_hidden": 0.0,
+  "R9_encoded_blob": -0.05068421151880508,
+  "R10_external_endpoint": 1.705278801448749
+ },
+ "counts": {
+  "mcptox_benign": 353,
+  "mcptox_poisoned": 702,
+  "servers": 45,
+  "successful_attacks": 502,
+  "wild_benign": 498,
+  "ood": 108
+ }
+}

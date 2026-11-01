@@ -1,0 +1,8 @@
+burn-in 1 0.015384615384615385
+burn-in 2 0.03076923076923077
+burn-in 5 0.0
+burn-in 10 0.0
+done endpoint
+done dependency
+done lowslow
+done output

@@ -1,0 +1,178 @@
+[
+ {
+  "server": "mail",
+  "tool": "send_email",
+  "enforce": false,
+  "fired": 4,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "mail",
+  "tool": "send_email",
+  "enforce": true,
+  "fired": 4,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "mail",
+  "tool": "list_inbox",
+  "enforce": false,
+  "fired": 6,
+  "detected": 6,
+  "kinds": [
+   "L4_novel"
+  ]
+ },
+ {
+  "server": "mail",
+  "tool": "list_inbox",
+  "enforce": true,
+  "fired": 6,
+  "detected": 6,
+  "kinds": [
+   "L4_novel"
+  ]
+ },
+ {
+  "server": "notes",
+  "tool": "add_note",
+  "enforce": false,
+  "fired": 4,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "notes",
+  "tool": "add_note",
+  "enforce": true,
+  "fired": 4,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "notes",
+  "tool": "list_notes",
+  "enforce": false,
+  "fired": 3,
+  "detected": 3,
+  "kinds": [
+   "L4_novel"
+  ]
+ },
+ {
+  "server": "notes",
+  "tool": "list_notes",
+  "enforce": true,
+  "fired": 3,
+  "detected": 3,
+  "kinds": [
+   "L4_novel"
+  ]
+ },
+ {
+  "server": "notes",
+  "tool": "read_note",
+  "enforce": false,
+  "fired": 3,
+  "detected": 3,
+  "kinds": [
+   "L4_novel"
+  ]
+ },
+ {
+  "server": "notes",
+  "tool": "read_note",
+  "enforce": true,
+  "fired": 3,
+  "detected": 3,
+  "kinds": [
+   "L4_novel"
+  ]
+ },
+ {
+  "server": "web",
+  "tool": "fetch_doc",
+  "enforce": false,
+  "fired": 3,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "web",
+  "tool": "fetch_doc",
+  "enforce": true,
+  "fired": 3,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "web",
+  "tool": "get_price",
+  "enforce": false,
+  "fired": 5,
+  "detected": 5,
+  "kinds": [
+   "L4_novel"
+  ]
+ },
+ {
+  "server": "web",
+  "tool": "get_price",
+  "enforce": true,
+  "fired": 5,
+  "detected": 5,
+  "kinds": [
+   "L4_novel"
+  ]
+ },
+ {
+  "server": "files",
+  "tool": "read_file",
+  "enforce": false,
+  "fired": 5,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "files",
+  "tool": "read_file",
+  "enforce": true,
+  "fired": 5,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "files",
+  "tool": "search_files",
+  "enforce": false,
+  "fired": 5,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "files",
+  "tool": "search_files",
+  "enforce": true,
+  "fired": 5,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "files",
+  "tool": "file_stats",
+  "enforce": false,
+  "fired": 2,
+  "detected": 0,
+  "kinds": []
+ },
+ {
+  "server": "files",
+  "tool": "file_stats",
+  "enforce": true,
+  "fired": 2,
+  "detected": 0,
+  "kinds": []
+ }
+]

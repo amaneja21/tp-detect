@@ -1,0 +1,357 @@
+{
+ "counts": {
+  "mcptox_benign": 353,
+  "mcptox_poisoned": 1338,
+  "mcptox_servers": 45,
+  "wild_benign": 610,
+  "wild_servers": 43,
+  "ood1": 108,
+  "ood2": 96,
+  "successful_attacks": 896,
+  "unseen_in_design": 636
+ },
+ "Pattern scanner (MCP-Scan-style)": {
+  "mcptox_recall": 0.7346786248131539,
+  "mcptox_fpr": 0.0113314447592068,
+  "wild_fpr": 0.08524590163934426,
+  "recall_successful": 0.7533482142857143,
+  "recall_T1": 0.7692307692307693,
+  "recall_T2": 0.7294117647058823,
+  "recall_T3": 0.7278688524590164,
+  "auroc_mcptox": 0.8616735900269735,
+  "ood1_recall": 0.5833333333333334,
+  "ood2_recall": 0.4166666666666667,
+  "recall_unseen_in_design": 0.7169811320754716,
+  "pooled_precision": 0.9461020211742059,
+  "pooled_f1": 0.8270929743374,
+  "mcptox_recall_ci": [
+   0.6993972139262796,
+   0.7758375272226191
+  ],
+  "wild_fpr_ci": [
+   0.05028915540614529,
+   0.12567956646053594
+  ],
+  "ood1_by_style": {
+   "important_block": 1.0,
+   "polite_note": 0.26666666666666666,
+   "unicode_tags": 1.0,
+   "html_comment": 1.0,
+   "param_spec": 0.2,
+   "shadowing": 0.3333333333333333,
+   "paraphrase_subtle": 0.2,
+   "invariant_poc": 1.0
+  },
+  "ood2_by_style": {
+   "workflow_step": 0.3333333333333333,
+   "faq": 0.4166666666666667,
+   "json_meta": 0.3333333333333333,
+   "md_admonition": 0.4166666666666667,
+   "casual_tip": 0.3333333333333333,
+   "passive_voice": 0.3333333333333333,
+   "zero_width_obfuscated": 1.0,
+   "spanish": 0.16666666666666666
+  }
+ },
+ "v1 surface rules (hand)": {
+  "mcptox_recall": 0.7406576980568012,
+  "mcptox_fpr": 0.0056657223796034,
+  "wild_fpr": 0.054098360655737705,
+  "recall_successful": 0.7555803571428571,
+  "recall_T1": 0.7403846153846154,
+  "recall_T2": 0.7803921568627451,
+  "recall_T3": 0.7065573770491803,
+  "auroc_mcptox": 0.992386420897962,
+  "ood1_recall": 0.4444444444444444,
+  "ood2_recall": 0.16666666666666666,
+  "recall_unseen_in_design": 0.7295597484276729,
+  "pooled_precision": 0.9658869395711501,
+  "pooled_f1": 0.8384094754653131,
+  "mcptox_recall_ci": [
+   0.7085485109353187,
+   0.7739506873668831
+  ],
+  "wild_fpr_ci": [
+   0.02951897071178464,
+   0.0872220522235822
+  ],
+  "ood1_by_style": {
+   "important_block": 1.0,
+   "polite_note": 0.0,
+   "unicode_tags": 1.0,
+   "html_comment": 1.0,
+   "param_spec": 0.0,
+   "shadowing": 0.0,
+   "paraphrase_subtle": 0.0,
+   "invariant_poc": 1.0
+  },
+  "ood2_by_style": {
+   "workflow_step": 0.08333333333333333,
+   "faq": 0.0,
+   "json_meta": 0.0,
+   "md_admonition": 0.0,
+   "casual_tip": 0.16666666666666666,
+   "passive_voice": 0.0,
+   "zero_width_obfuscated": 1.0,
+   "spanish": 0.08333333333333333
+  }
+ },
+ "v2 harm-directed rules (hand)": {
+  "mcptox_recall": 0.8871449925261584,
+  "mcptox_fpr": 0.014164305949008499,
+  "wild_fpr": 0.03278688524590164,
+  "recall_successful": 0.8995535714285714,
+  "recall_T1": 0.9038461538461539,
+  "recall_T2": 0.8803921568627451,
+  "recall_T3": 0.8868852459016393,
+  "auroc_mcptox": 0.9792203915192013,
+  "ood1_recall": 0.8981481481481481,
+  "ood2_recall": 0.375,
+  "recall_unseen_in_design": 0.8270440251572327,
+  "pooled_precision": 0.9793729372937293,
+  "pooled_f1": 0.9309803921568628,
+  "mcptox_recall_ci": [
+   0.8481355870397322,
+   0.9227598836616916
+  ],
+  "wild_fpr_ci": [
+   0.005473215110676998,
+   0.0668254794653235
+  ],
+  "ood1_by_style": {
+   "important_block": 1.0,
+   "polite_note": 1.0,
+   "unicode_tags": 1.0,
+   "html_comment": 1.0,
+   "param_spec": 0.26666666666666666,
+   "shadowing": 1.0,
+   "paraphrase_subtle": 1.0,
+   "invariant_poc": 1.0
+  },
+  "ood2_by_style": {
+   "workflow_step": 0.16666666666666666,
+   "faq": 0.16666666666666666,
+   "json_meta": 0.16666666666666666,
+   "md_admonition": 0.16666666666666666,
+   "casual_tip": 0.8333333333333334,
+   "passive_voice": 0.4166666666666667,
+   "zero_width_obfuscated": 1.0,
+   "spanish": 0.08333333333333333
+  }
+ },
+ "Text-LR [MCPTox]": {
+  "mcptox_recall": 0.9887892376681614,
+  "mcptox_fpr": 0.05099150141643059,
+  "wild_fpr": 0.02622950819672131,
+  "recall_successful": 0.9955357142857143,
+  "recall_T1": 0.9855769230769231,
+  "recall_T2": 0.9921568627450981,
+  "recall_T3": 0.9868852459016394,
+  "auroc_mcptox": 0.9972497109973449,
+  "ood1_recall": 0.23148148148148148,
+  "ood2_recall": 0.10416666666666667,
+  "recall_unseen_in_design": 0.9779874213836478,
+  "pooled_precision": 0.9749447310243183,
+  "pooled_f1": 0.9818181818181818,
+  "mcptox_recall_ci": [
+   0.976014151047873,
+   0.9970512772177107
+  ],
+  "wild_fpr_ci": [
+   0.008305268991388866,
+   0.0535754264392324
+  ],
+  "ood1_by_style": {
+   "important_block": 0.9333333333333333,
+   "polite_note": 0.13333333333333333,
+   "unicode_tags": 0.0,
+   "html_comment": 0.06666666666666667,
+   "param_spec": 0.06666666666666667,
+   "shadowing": 0.2,
+   "paraphrase_subtle": 0.06666666666666667,
+   "invariant_poc": 1.0
+  },
+  "ood2_by_style": {
+   "workflow_step": 0.0,
+   "faq": 0.16666666666666666,
+   "json_meta": 0.16666666666666666,
+   "md_admonition": 0.08333333333333333,
+   "casual_tip": 0.08333333333333333,
+   "passive_voice": 0.25,
+   "zero_width_obfuscated": 0.08333333333333333,
+   "spanish": 0.0
+  }
+ },
+ "Text-LR [MCPTox+wild]": {
+  "mcptox_recall": 0.976831091180867,
+  "mcptox_fpr": 0.0084985835694051,
+  "wild_fpr": 0.001639344262295082,
+  "recall_successful": 0.9888392857142857,
+  "recall_T1": 0.9326923076923077,
+  "recall_T2": 0.9823529411764705,
+  "recall_T3": 0.9868852459016394,
+  "auroc_mcptox": 0.99906841635014,
+  "ood1_recall": 0.1574074074074074,
+  "ood2_recall": 0.020833333333333332,
+  "recall_unseen_in_design": 0.9638364779874213,
+  "pooled_precision": 0.9969488939740656,
+  "pooled_f1": 0.9867874669686674,
+  "mcptox_recall_ci": [
+   0.9631251469668901,
+   0.9907213910446169
+  ],
+  "wild_fpr_ci": [
+   0.0,
+   0.0044580678188085665
+  ],
+  "ood1_by_style": {
+   "important_block": 1.0,
+   "polite_note": 0.0,
+   "unicode_tags": 0.0,
+   "html_comment": 0.0,
+   "param_spec": 0.0,
+   "shadowing": 0.0,
+   "paraphrase_subtle": 0.0,
+   "invariant_poc": 0.6666666666666666
+  },
+  "ood2_by_style": {
+   "workflow_step": 0.0,
+   "faq": 0.08333333333333333,
+   "json_meta": 0.0,
+   "md_admonition": 0.0,
+   "casual_tip": 0.0,
+   "passive_voice": 0.08333333333333333,
+   "zero_width_obfuscated": 0.0,
+   "spanish": 0.0
+  }
+ },
+ "v2-LR [MCPTox+wild]": {
+  "mcptox_recall": 0.8796711509715994,
+  "mcptox_fpr": 0.0056657223796034,
+  "wild_fpr": 0.022950819672131147,
+  "recall_successful": 0.8917410714285714,
+  "recall_T1": 0.8942307692307693,
+  "recall_T2": 0.8764705882352941,
+  "recall_T3": 0.8786885245901639,
+  "auroc_mcptox": 0.9807532700703345,
+  "ood1_recall": 0.49074074074074076,
+  "ood2_recall": 0.15625,
+  "recall_unseen_in_design": 0.8191823899371069,
+  "pooled_precision": 0.9865884325230512,
+  "pooled_f1": 0.9300671671276175,
+  "mcptox_recall_ci": [
+   0.8386266793790739,
+   0.9154337205079627
+  ],
+  "wild_fpr_ci": [
+   0.009629664767511628,
+   0.039856478357273684
+  ],
+  "ood1_by_style": {
+   "important_block": 1.0,
+   "polite_note": 0.6,
+   "unicode_tags": 0.0,
+   "html_comment": 0.26666666666666666,
+   "param_spec": 0.2,
+   "shadowing": 0.6,
+   "paraphrase_subtle": 0.6666666666666666,
+   "invariant_poc": 1.0
+  },
+  "ood2_by_style": {
+   "workflow_step": 0.16666666666666666,
+   "faq": 0.16666666666666666,
+   "json_meta": 0.16666666666666666,
+   "md_admonition": 0.16666666666666666,
+   "casual_tip": 0.5,
+   "passive_voice": 0.08333333333333333,
+   "zero_width_obfuscated": 0.0,
+   "spanish": 0.0
+  }
+ },
+ "TP-Detect L2 [MCPTox+wild]": {
+  "mcptox_recall": 0.9431988041853513,
+  "mcptox_fpr": 0.0084985835694051,
+  "wild_fpr": 0.009836065573770493,
+  "recall_successful": 0.9587053571428571,
+  "recall_T1": 0.9134615384615384,
+  "recall_T2": 0.9450980392156862,
+  "recall_T3": 0.9508196721311475,
+  "auroc_mcptox": 0.99838454926172,
+  "ood1_recall": 0.48148148148148145,
+  "ood2_recall": 0.15625,
+  "recall_unseen_in_design": 0.9182389937106918,
+  "pooled_precision": 0.992918961447679,
+  "pooled_f1": 0.9674204676121119,
+  "mcptox_recall_ci": [
+   0.9168557405813761,
+   0.967358557843789
+  ],
+  "wild_fpr_ci": [
+   0.0019075913380977615,
+   0.01838392718747578
+  ],
+  "ood1_by_style": {
+   "important_block": 1.0,
+   "polite_note": 0.5333333333333333,
+   "unicode_tags": 0.0,
+   "html_comment": 0.26666666666666666,
+   "param_spec": 0.2,
+   "shadowing": 0.5333333333333333,
+   "paraphrase_subtle": 0.7333333333333333,
+   "invariant_poc": 1.0
+  },
+  "ood2_by_style": {
+   "workflow_step": 0.16666666666666666,
+   "faq": 0.16666666666666666,
+   "json_meta": 0.08333333333333333,
+   "md_admonition": 0.16666666666666666,
+   "casual_tip": 0.4166666666666667,
+   "passive_voice": 0.16666666666666666,
+   "zero_width_obfuscated": 0.08333333333333333,
+   "spanish": 0.0
+  }
+ },
+ "TP-Detect L2 ensemble (v2 rules OR learned)": {
+  "mcptox_recall": 0.945440956651719,
+  "mcptox_fpr": 0.0169971671388102,
+  "wild_fpr": 0.03278688524590164,
+  "recall_successful": 0.9598214285714286,
+  "recall_T1": 0.9182692307692307,
+  "recall_T2": 0.9490196078431372,
+  "recall_T3": 0.9508196721311475,
+  "auroc_mcptox": 0.9952256337944672,
+  "ood1_recall": 0.8981481481481481,
+  "ood2_recall": 0.375,
+  "recall_unseen_in_design": 0.9182389937106918,
+  "pooled_precision": 0.9798605731990705,
+  "pooled_f1": 0.9623430962343096,
+  "mcptox_recall_ci": [
+   0.9188357443764407,
+   0.9706760566099666
+  ],
+  "wild_fpr_ci": [
+   0.005473215110676998,
+   0.0668254794653235
+  ],
+  "ood1_by_style": {
+   "important_block": 1.0,
+   "polite_note": 1.0,
+   "unicode_tags": 1.0,
+   "html_comment": 1.0,
+   "param_spec": 0.26666666666666666,
+   "shadowing": 1.0,
+   "paraphrase_subtle": 1.0,
+   "invariant_poc": 1.0
+  },
+  "ood2_by_style": {
+   "workflow_step": 0.16666666666666666,
+   "faq": 0.16666666666666666,
+   "json_meta": 0.16666666666666666,
+   "md_admonition": 0.16666666666666666,
+   "casual_tip": 0.8333333333333334,
+   "passive_voice": 0.4166666666666667,
+   "zero_width_obfuscated": 1.0,
+   "spanish": 0.08333333333333333
+  }
+ }
+}

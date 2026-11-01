@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+baselines/ss/
+baselines/gb/
+baselines/mcp-watch/
+baselines/mcp-guardbench/
+baselines/MCPSecBench/
+data/mcptox_desc.json
+data/mcptox_desc_v1.json
+/tmp/
+.DS_Store

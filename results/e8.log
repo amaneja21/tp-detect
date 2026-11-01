@@ -1,0 +1,57 @@
+Secure MCP Filesystem Server running on stdio
+Client does not support MCP Roots, using allowed directories set from server args: [ '/tmp/tpd/workspace' ]
+Secure MCP Filesystem Server running on stdio
+Client does not support MCP Roots, using allowed directories set from server args: [ '/tmp/tpd/workspace' ]
+node none {'calls': 90, 'fired': 0, 'detected': 0, 'benign_alerts': 0, 'benign_calls': 90, 'exfil_bytes': 0, 'kinds': {}}
+Secure MCP Filesystem Server running on stdio
+Client does not support MCP Roots, using allowed directories set from server args: [ '/tmp/tpd/workspace' ]
+node endpoint {'calls': 90, 'fired': 39, 'detected': 39, 'benign_alerts': 0, 'benign_calls': 51, 'exfil_bytes': 1274, 'kinds': {'L3_violation': 39, 'L4_novel': 39, 'L4_burst': 19}}
+Secure MCP Filesystem Server running on stdio
+Client does not support MCP Roots, using allowed directories set from server args: [ '/tmp/tpd/workspace' ]
+node lowslow {'calls': 90, 'fired': 39, 'detected': 39, 'benign_alerts': 0, 'benign_calls': 51, 'exfil_bytes': 0, 'kinds': {'L3_violation': 39, 'L4_novel': 39}}
+{'endpoint': {'fired': 49, 'detected': 49, 'benign_calls': 371, 'benign_alerts': 0, 'exfil_bytes': 0}, 'dependency': {'fired': 50, 'detected': 50, 'benign_calls': 370, 'benign_alerts': 0, 'exfil_bytes': 0}, 'lowslow': {'fired': 57, 'detected': 57, 'benign_calls': 363, 'benign_alerts': 0, 'exfil_bytes': 0}}
+{
+"notes": {
+"fs_read": [
+"/tmp/tpd/notes"
+],
+"fs_write": [
+"/tmp/tpd/notes"
+],
+"net": [],
+"exec": false
+},
+"files": {
+"fs_read": [
+"/tmp/tpd/workspace"
+],
+"fs_write": [],
+"net": [],
+"exec": false
+},
+"web": {
+"fs_read": [],
+"fs_write": [],
+"net": [
+"127.0.0.1:8801",
+"127.0.0.1:8802"
+],
+"exec": false
+},
+"calc": {
+"fs_read": [],
+"fs_write": [],
+"net": [],
+"exec": false
+},
+"mail": {
+"fs_read": [
+"/tmp/tpd/inbox"
+],
+"fs_write": [
+"/tmp/tpd/outbox"
+],
+"net": [],
+"exec": false
+}
+}

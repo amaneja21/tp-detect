@@ -1,0 +1,34 @@
+{
+ "SkillSpector TP1-TP3": {
+  "mcptox_recall": 0.05754857997010463,
+  "mcptox_fpr": 0.1048158640226629,
+  "wild_fpr": 0.26229508196721313,
+  "ood1_recall": 0.24074074074074073,
+  "ood2_recall": 0.2916666666666667
+ },
+ "mcp-watch (any finding)": {
+  "mcptox_recall": 0.398355754857997,
+  "mcptox_fpr": 0.1274787535410765,
+  "wild_fpr": 0.2934426229508197,
+  "ood1_recall": 0.4722222222222222,
+  "ood2_recall": 0.3333333333333333
+ },
+ "mcp-watch (injection categories)": {
+  "mcptox_recall": 0.032137518684603884,
+  "mcptox_fpr": 0.0113314447592068,
+  "wild_fpr": 0.04918032786885246,
+  "ood1_recall": 0.027777777777777776,
+  "ood2_recall": 0.03125
+ },
+ "mcp_watch_categories": {
+  "toxic-flow": 441,
+  "access-control": 432,
+  "tool-poisoning": 14,
+  "tool-mutation": 14,
+  "prompt-injection": 60,
+  "protocol-violation": 14,
+  "input-validation": 27,
+  "data-exfiltration": 21
+ },
+ "n_vulns": 1023
+}

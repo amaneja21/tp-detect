@@ -1,0 +1,518 @@
+{
+ "auto_manifest": {
+  "per_attack": {
+   "endpoint": {
+    "fired": 49,
+    "detected": 49,
+    "benign_calls": 371,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   "dependency": {
+    "fired": 50,
+    "detected": 50,
+    "benign_calls": 370,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   "lowslow": {
+    "fired": 57,
+    "detected": 57,
+    "benign_calls": 363,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   }
+  },
+  "manifests": {
+   "notes": {
+    "fs_read": [
+     "/tmp/tpd/notes"
+    ],
+    "fs_write": [
+     "/tmp/tpd/notes"
+    ],
+    "net": [],
+    "exec": false
+   },
+   "files": {
+    "fs_read": [
+     "/tmp/tpd/workspace"
+    ],
+    "fs_write": [],
+    "net": [],
+    "exec": false
+   },
+   "web": {
+    "fs_read": [],
+    "fs_write": [],
+    "net": [
+     "127.0.0.1:8801",
+     "127.0.0.1:8802"
+    ],
+    "exec": false
+   },
+   "calc": {
+    "fs_read": [],
+    "fs_write": [],
+    "net": [],
+    "exec": false
+   },
+   "mail": {
+    "fs_read": [
+     "/tmp/tpd/inbox"
+    ],
+    "fs_write": [
+     "/tmp/tpd/outbox"
+    ],
+    "net": [],
+    "exec": false
+   }
+  },
+  "episodes": [
+   {
+    "attack": "endpoint",
+    "server": "notes",
+    "tool": "add_note",
+    "fired": 2,
+    "detected": 2,
+    "benign_calls": 34,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "notes",
+    "tool": "list_notes",
+    "fired": 8,
+    "detected": 8,
+    "benign_calls": 28,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "notes",
+    "tool": "read_note",
+    "fired": 5,
+    "detected": 5,
+    "benign_calls": 31,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "files",
+    "tool": "read_file",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 33,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "files",
+    "tool": "search_files",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 33,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "files",
+    "tool": "file_stats",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 33,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "web",
+    "tool": "fetch_doc",
+    "fired": 5,
+    "detected": 5,
+    "benign_calls": 19,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "web",
+    "tool": "get_price",
+    "fired": 1,
+    "detected": 1,
+    "benign_calls": 23,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "calc",
+    "tool": "add",
+    "fired": 6,
+    "detected": 6,
+    "benign_calls": 30,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "calc",
+    "tool": "describe",
+    "fired": 2,
+    "detected": 2,
+    "benign_calls": 34,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "calc",
+    "tool": "convert",
+    "fired": 2,
+    "detected": 2,
+    "benign_calls": 34,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "mail",
+    "tool": "send_email",
+    "fired": 6,
+    "detected": 6,
+    "benign_calls": 18,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "endpoint",
+    "server": "mail",
+    "tool": "list_inbox",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 21,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "notes",
+    "tool": "add_note",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 33,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "notes",
+    "tool": "list_notes",
+    "fired": 4,
+    "detected": 4,
+    "benign_calls": 32,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "notes",
+    "tool": "read_note",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 33,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "files",
+    "tool": "read_file",
+    "fired": 4,
+    "detected": 4,
+    "benign_calls": 32,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "files",
+    "tool": "search_files",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 33,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "files",
+    "tool": "file_stats",
+    "fired": 4,
+    "detected": 4,
+    "benign_calls": 32,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "web",
+    "tool": "fetch_doc",
+    "fired": 4,
+    "detected": 4,
+    "benign_calls": 20,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "web",
+    "tool": "get_price",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 21,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "calc",
+    "tool": "add",
+    "fired": 4,
+    "detected": 4,
+    "benign_calls": 32,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "calc",
+    "tool": "describe",
+    "fired": 5,
+    "detected": 5,
+    "benign_calls": 31,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "calc",
+    "tool": "convert",
+    "fired": 4,
+    "detected": 4,
+    "benign_calls": 32,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "mail",
+    "tool": "send_email",
+    "fired": 4,
+    "detected": 4,
+    "benign_calls": 20,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "dependency",
+    "server": "mail",
+    "tool": "list_inbox",
+    "fired": 5,
+    "detected": 5,
+    "benign_calls": 19,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "notes",
+    "tool": "add_note",
+    "fired": 6,
+    "detected": 6,
+    "benign_calls": 30,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "notes",
+    "tool": "list_notes",
+    "fired": 4,
+    "detected": 4,
+    "benign_calls": 32,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "notes",
+    "tool": "read_note",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 33,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "files",
+    "tool": "read_file",
+    "fired": 4,
+    "detected": 4,
+    "benign_calls": 32,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "files",
+    "tool": "search_files",
+    "fired": 6,
+    "detected": 6,
+    "benign_calls": 30,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "files",
+    "tool": "file_stats",
+    "fired": 8,
+    "detected": 8,
+    "benign_calls": 28,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "web",
+    "tool": "fetch_doc",
+    "fired": 2,
+    "detected": 2,
+    "benign_calls": 22,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "web",
+    "tool": "get_price",
+    "fired": 7,
+    "detected": 7,
+    "benign_calls": 17,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "calc",
+    "tool": "add",
+    "fired": 4,
+    "detected": 4,
+    "benign_calls": 32,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "calc",
+    "tool": "describe",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 33,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "calc",
+    "tool": "convert",
+    "fired": 5,
+    "detected": 5,
+    "benign_calls": 31,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "mail",
+    "tool": "send_email",
+    "fired": 3,
+    "detected": 3,
+    "benign_calls": 21,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   },
+   {
+    "attack": "lowslow",
+    "server": "mail",
+    "tool": "list_inbox",
+    "fired": 2,
+    "detected": 2,
+    "benign_calls": 22,
+    "benign_alerts": 0,
+    "exfil_bytes": 0
+   }
+  ]
+ },
+ "node": {
+  "tools": [
+   "read_text_file",
+   "list_directory",
+   "get_file_info",
+   "search_files",
+   "directory_tree",
+   "list_allowed_directories"
+  ],
+  "manifest": {
+   "fs_read": [
+    "/tmp/tpd/workspace"
+   ],
+   "fs_write": [],
+   "net": [],
+   "exec": false
+  },
+  "runs": {
+   "none": {
+    "calls": 90,
+    "fired": 0,
+    "detected": 0,
+    "benign_alerts": 0,
+    "benign_calls": 90,
+    "exfil_bytes": 0,
+    "kinds": {}
+   },
+   "endpoint": {
+    "calls": 90,
+    "fired": 39,
+    "detected": 39,
+    "benign_alerts": 0,
+    "benign_calls": 51,
+    "exfil_bytes": 1274,
+    "kinds": {
+     "L3_violation": 39,
+     "L4_novel": 39,
+     "L4_burst": 19
+    }
+   },
+   "lowslow": {
+    "calls": 90,
+    "fired": 39,
+    "detected": 39,
+    "benign_alerts": 0,
+    "benign_calls": 51,
+    "exfil_bytes": 0,
+    "kinds": {
+     "L3_violation": 39,
+     "L4_novel": 39
+    }
+   }
+  }
+ }
+}

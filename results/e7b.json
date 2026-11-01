@@ -1,0 +1,77 @@
+{
+ "GuardBench (high+)": {
+  "mcptox_pois": 0.7959641255605381,
+  "mcptox_ben": 0.014164305949008499,
+  "wild": 0.011475409836065573,
+  "ood1": 0.4444444444444444,
+  "ood2": 0.14583333333333334
+ },
+ "thirdparty_corpus": {
+  "n_poisoned": 7,
+  "n_benign": 38,
+  "detectors": {
+   "SkillSpector TP1-TP3": {
+    "detected": 2,
+    "false_pos": 0,
+    "missed": [
+     "get_forecast",
+     "add",
+     "modify",
+     "m_check",
+     "aft_check"
+    ]
+   },
+   "mcp-watch (injection)": {
+    "detected": 2,
+    "false_pos": 0,
+    "missed": [
+     "get_forecast",
+     "add",
+     "modify",
+     "m_check",
+     "aft_check"
+    ]
+   },
+   "GuardBench (high+)": {
+    "detected": 5,
+    "false_pos": 0,
+    "missed": [
+     "get_forecast",
+     "modify"
+    ]
+   },
+   "Pattern scanner": {
+    "detected": 3,
+    "false_pos": 0,
+    "missed": [
+     "add",
+     "modify",
+     "m_check",
+     "aft_check"
+    ]
+   },
+   "v2 rules": {
+    "detected": 2,
+    "false_pos": 0,
+    "missed": [
+     "get_forecast",
+     "add",
+     "modify",
+     "m_check",
+     "aft_check"
+    ]
+   },
+   "TP-Detect L2": {
+    "detected": 2,
+    "false_pos": 0,
+    "missed": [
+     "get_forecast",
+     "add",
+     "modify",
+     "m_check",
+     "aft_check"
+    ]
+   }
+  }
+ }
+}

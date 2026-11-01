@@ -1,0 +1,7 @@
+{
+ "notes": {"fs_read": ["/tmp/tpd/notes"], "fs_write": ["/tmp/tpd/notes"], "net": [], "exec": false},
+ "files": {"fs_read": ["/tmp/tpd/workspace"], "fs_write": [], "net": [], "exec": false},
+ "web":   {"fs_read": [], "fs_write": [], "net": ["127.0.0.1:8801", "127.0.0.1:8802"], "exec": false},
+ "calc":  {"fs_read": [], "fs_write": [], "net": [], "exec": false},
+ "mail":  {"fs_read": ["/tmp/tpd/inbox", "/tmp/tpd/outbox"], "fs_write": ["/tmp/tpd/outbox"], "net": [], "exec": false}
+}
