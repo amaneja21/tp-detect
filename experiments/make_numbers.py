@@ -1,4 +1,7 @@
-"""Emit paper/numbers.tex: every quantitative claim in the paper is a macro computed here."""
+"""Emit numbers.tex: every quantitative claim in the paper is a macro computed here.
+Output path: $NUMBERS_OUT, default results/numbers.tex."""
+import os
+OUT = os.environ.get("NUMBERS_OUT", "results/numbers.tex")
 import json, collections
 e1 = json.load(open("results/e1_final.json")); e2 = json.load(open("results/e2.json"))
 e3 = json.load(open("results/e3.json")); e3b = json.load(open("results/e3_inmanifest.json"))
@@ -73,7 +76,7 @@ m("eEoverMin", f"{min(over):.1f}"); m("eEoverMax", f"{max(over):.1f}"); m("eEsbM
 m("eEpNineNine", f"{max(e5[f'{s}/full']['p99'] for s in ['calc','notes','web','files']):.1f}")
 m("eElistMax", f"{max(e5[f'{s}/full']['list_tools_ms'] for s in ['calc','notes','web','files']):.1f}")
 m("eEltwo", f"{e5['l2_score_ms_per_item']:.1f}")
-open("../paper/numbers.tex", "w").write("\n".join(L) + "\n")
+open(OUT, "w").write("\n".join(L) + "\n")
 print(len(L), "macros")
 
 # ---------------- Round 2 experiments ----------------
@@ -117,5 +120,5 @@ for x in e9:
     m2(f"eI{t}Exp", x["exposure"]); m2(f"eI{t}Q", x["first_quarantine_round"] if x["first_quarantine_round"] is not None else "--")
 m2("eIfalseQ", sum(x["false_quarantines"] for x in e9)); m2("eIbenAl", sum(x["benign_alerts"] for x in e9))
 m2("eIcalls", f"{sum(x['calls'] for x in e9):,}")
-open("../paper/numbers.tex", "a").write("\n".join(L2_) + "\n")
+open(OUT, "a").write("\n".join(L2_) + "\n")
 print(len(L2_), "round-2 macros")

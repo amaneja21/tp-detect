@@ -7,7 +7,7 @@ Artifact for the paper *Description Scanning Is Not Enough: Lifecycle-Wide Defen
   `strace_events.py` (L3/L4 for non-Python servers),
   `sandbox.py` (L3 audit-hook loader), `gateway.py` (L1 to L5 around a live MCP session), `reputation.py` (L5).
 - `testbed/` five Python MCP servers, capability manifests, and the attack shim (`common.py`).
-- `experiments/` every experiment and the script that turns result files into `paper/numbers.tex`.
+- `experiments/` every experiment and the script that turns result files into the paper's numbers (`results/numbers.tex`).
 - `data/` derived datasets (see below). `results/` raw outputs. `figures/` paper figures.
 - `baselines/` wrappers used to run SkillSpector, MCP-GuardBench and mcp-watch on our corpora.
 
@@ -40,6 +40,7 @@ python experiments/mine_drift_versions.py data/versions_raw.json data/benign_dri
 python experiments/figures.py && python experiments/make_numbers.py
 ```
 The testbed attacks are benign simulations against canary files under `/tmp/tpd` and a local TCP sink.
+All results are deterministic except the latency figures from `e5_latency.py`, which depend on the machine.
 
 ## Environment variables for third-party comparisons
 
